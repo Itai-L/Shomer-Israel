@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "365620669155",
+    "project_id": "watch-list-1751c",
+    "storage_bucket": "watch-list-1751c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365620669155:android:2c20cb22a7ad29b1d373d6",
+        "android_client_info": {
+          "package_name": "com.example.watchlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8f49wUB7Vj2qsXiacrH-JZ43bbtfZv9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

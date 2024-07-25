@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner_background">
+
+        <EditText
+            android:id="@+id/editTextListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="List Name"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonDecreasePosts"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp"
+                android:backgroundTint="#FF4081"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:padding="8dp"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonIncreasePosts"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:backgroundTint="#FF4081"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/postsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonChooseSoldiers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Soldiers"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/textViewNumSoldiers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Number of Soldiers: 0"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Hour:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewStartHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="HH:MM"
+                android:paddingStart="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day Time"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewDayStartHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="HH:MM"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" to "
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textViewDayEndHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="HH:MM"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewNightTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night Time: 0 to 0"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration of Cycle:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editTextDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="1-24"
+                android:paddingStart="8dp"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonApprove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6200EE"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF4081"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

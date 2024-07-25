@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#9B9A9A"
+        android:src="@mipmap/app_icon_foreground" />
+
+    <TextView
+        android:id="@+id/stylized_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שומר ישראל"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2" />
+
+
+    <TextView
+        android:id="@+id/data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="שם המגיש: איתי לוין\nת.ז. 313538803\nתאריך הגשה: 21/07/24"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2" />
+</RelativeLayout>

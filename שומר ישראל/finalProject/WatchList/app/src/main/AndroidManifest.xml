@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.watchlist"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="שומר ישראל"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WatchList"
+        tools:targetApi="31">
+        <service android:name=".MonitorService" />
+        <receiver android:name=".TimeCheckReceiver" />
+
+
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"  android:theme="@style/Theme.WatchList.NoActionBar" />
+
+        <activity android:name=".TeamDetailActivity" android:theme="@style/Theme.WatchList.NoActionBar" />
+        <activity android:name=".InspectListActivity" android:theme="@style/Theme.WatchList.NoActionBar" />
+        <activity android:name=".WatchListsActivity" />
+        <activity android:name=".ManageTeamActivity" />
+        <activity android:name=".CreateNewList"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".BuildListActivity" android:theme="@style/Theme.WatchList.NoActionBar" />    </application>
+
+
+</manifest>
